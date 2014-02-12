@@ -3,19 +3,19 @@
 <plist version="1.0">
 <dict>
 	<key>Author</key>
-	<string>Zak Johnson</string>
+	<string>Cian Hannafin</string>
 	<key>Builder Version</key>
-	<string>6534.50</string>
+	<string>9537.73.11</string>
 	<key>CFBundleDisplayName</key>
-	<string>Google Reader Background Tabs</string>
+	<string>Feedly Background Tabs</string>
 	<key>CFBundleIdentifier</key>
-	<string>cx.nox.safari.googlereaderbackgroundtabs</string>
+	<string>com.cian.safari.feedlybackgroundtabs</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.3</string>
+	<string>1.0</string>
 	<key>CFBundleVersion</key>
-	<string>4</string>
+	<string>1</string>
 	<key>Chrome</key>
 	<dict>
 		<key>Global Page</key>
@@ -30,29 +30,28 @@
 				<string>content.js</string>
 			</array>
 		</dict>
-		<key>Whitelist</key>
-		<array>
-			<string>http://*/reader/view*</string>
-			<string>https://*/reader/view*</string>
-		</array>
 	</dict>
 	<key>Description</key>
-	<string>Add a shortcut key to open a new tab for the selected item in Google Reader.</string>
+	<string>Add a shortcut key to open a new tab for the selected item in Feedly.</string>
 	<key>ExtensionInfoDictionaryVersion</key>
 	<string>1.0</string>
 	<key>Permissions</key>
 	<dict>
 		<key>Website Access</key>
 		<dict>
+			<key>Allowed Domains</key>
+			<array>
+				<string>feedly.com</string>
+			</array>
 			<key>Include Secure Pages</key>
 			<true/>
 			<key>Level</key>
-			<string>All</string>
+			<string>Some</string>
 		</dict>
 	</dict>
 	<key>Update Manifest URL</key>
-	<string>http://zakj.github.com/Google-Reader-Background-Tabs/Manifest.plist</string>
+	<string>https://raw.github.com/CianH/Feedly-Background-Tabs.safariextension/master/Update.plist</string>
 	<key>Website</key>
-	<string>http://zakj.github.com/Google-Reader-Background-Tabs.safariextension/</string>
+	<string>https://github.com/CianH/Feedly-Background-Tabs.safariextension</string>
 </dict>
 </plist>
