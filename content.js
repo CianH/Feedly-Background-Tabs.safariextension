@@ -20,10 +20,10 @@ if (document.location.host == 'feedly.com') {
       var item = null;
       var selectedElements = document.getElementsByClassName('u0Entry selectedEntry');
       if (!selectedElements || !selectedElements[0]) {
-        // can't find 'u0Entry selectedEntry', fall back to search for 'inlineFrame noAnimation'
-        var inlineFrames = document.getElementsByClassName('inlineFrame noAnimation');
+        // can't find 'u0Entry selectedEntry', fall back to search for 'inlineFrame'
+        var inlineFrames = document.getElementsByClassName('inlineFrame');
         if (!inlineFrames || !inlineFrames[0]){
-          // can't find 'inlineFrame noAnimation', means nothing is visibly selected.
+          // can't find 'inlineFrame', means nothing is visibly selected.
           // TODO: Noticed an odd state sometimes where nothing is selected
           //       but v still works and doesn't background. Needs more investigation.
           return;
